@@ -1,8 +1,13 @@
-import React from 'react'
-
-function Course({course}) {
+import Header from './Header'
+import Content from './Content'
+const Course =({course}) => {
+  console.log(course)
+  
   return (
-    <div>{course}</div>
+    <>
+    <Header tittle={course.name}/>
+    <Content content = {course.parts}/>
+    </>
   )
 }
 
