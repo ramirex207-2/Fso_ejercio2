@@ -1,8 +1,12 @@
 import Part from './Part'
-function Content(props) {
-    const parts = props 
+import Total from './Total'
+function Content({content}) {
+   
   return (
-    <Part parts = {parts}/>
+    <>
+      <Part parts = {content}/>
+      <Total exercises={content} /> 
+    </>
   )
 }
 

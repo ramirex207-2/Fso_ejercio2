@@ -1,6 +1,5 @@
 
-function Part(props) {
-    const parts = props.parts.content
+function Part({parts}) {
   return (
     <ul>
         {parts.map(part =>
