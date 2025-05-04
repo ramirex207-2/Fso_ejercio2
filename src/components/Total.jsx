@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 function Total({exercises}) {
 
@@ -6,9 +6,13 @@ function Total({exercises}) {
         return acumulador + parte.exercises;
       }, 0);
       
-    console.log(totalExercises); 
   return (
-    <div>Total {totalExercises}</div>
+    <div>
+      <h4>
+      Total of {totalExercises} exercises
+      </h4>
+      
+    </div>
   )
 }
 
